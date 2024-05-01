@@ -1,3 +1,10 @@
 The diplicated fd: 1
 
-Could not find program to execute!
+PING google.com (142.250.201.78) 56(84) bytes of data.
+64 bytes from mad07s25-in-f14.1e100.net (142.250.201.78): icmp_seq=1 ttl=58 time=63.3 ms
+64 bytes from mad07s25-in-f14.1e100.net (142.250.201.78): icmp_seq=2 ttl=58 time=14.0 ms
+64 bytes from mad07s25-in-f14.1e100.net (142.250.201.78): icmp_seq=3 ttl=58 time=14.2 ms
+
+--- google.com ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+rtt min/avg/max/mdev = 14.002/30.503/63.324/23.207 ms

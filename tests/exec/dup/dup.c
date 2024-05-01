@@ -6,7 +6,7 @@
 /*   By: resilva <resilva@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/29 23:56:44 by resilva           #+#    #+#             */
-/*   Updated: 2024/04/30 00:16:45 by resilva          ###   ########.fr       */
+/*   Updated: 2024/05/01 22:53:50 by resilva          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,10 +30,10 @@ int	main(void)
 		
 		printf("The fd to pingResult: %d\n", file);
 		int file2 = dup2(file, STDOUT_FILENO);
-		printf("The diplicated fd: %d\n\n", file2);
+		printf("The duplicated fd: %d\n\n", file2);
 		close(file);
 		
-		int err = execlp("ping2", "ping", "-c", "3", "google.com", NULL);
+		int err = execlp("ping", "ping", "-c", "3", "google.com", NULL);
 		if (err == -1) {
 			printf("Could not find program to execute!\n");
 			return (3);
