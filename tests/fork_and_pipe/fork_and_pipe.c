@@ -6,7 +6,7 @@
 /*   By: resilva <resilva@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 23:48:44 by resilva           #+#    #+#             */
-/*   Updated: 2024/04/22 22:26:56 by resilva          ###   ########.fr       */
+/*   Updated: 2024/05/06 17:44:57 by resilva          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 
 int	main(void)
 {
-	int	arr[] = { 1, 3, 5, 7, 9, 11, 13, 15, 17};
+	int	arr[] = { 1, 3, 5, 7, 9, 11, 13, 15, 17 };
 	int	arrSize = sizeof(arr) / sizeof(int);
 	int	start, end;
 	int	fd1[2], fd2[2];
