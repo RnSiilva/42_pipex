@@ -6,7 +6,7 @@
 /*   By: resilva <resilva@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/06 22:28:22 by resilva           #+#    #+#             */
-/*   Updated: 2024/05/06 23:46:54 by resilva          ###   ########.fr       */
+/*   Updated: 2024/05/08 17:38:39 by resilva          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,10 +24,19 @@ void	handle_sigcont(int sig) {
 }
 int	main(void)
 {
-	struct sigaction sa;
-	sa.sa_handler = &handle_sigcont;
-	sa.sa_flags = SA_RESTART;
-	sigaction(SIGCONT, &sa, NULL);
+	/*Para mostrar uma mensagem quando o sinal SIGCONT for recebido, ou seja, 
+	quando fg for digitado*/
+	/*
+	struct sigaction sa1;
+	sa1.sa_handler = &handle_sigcont;
+	sa1.sa_flags = SA_RESTART;
+	sigaction(SIGCONT, &sa1, NULL);
+	*/
+
+	struct sigaction sa2;
+	sa2.sa_handler = &handle_sigtstp;
+	sa2.sa_flags = SA_RESTART;
+	sigaction(SIGTSTP, &sa2, NULL);
 	
 	int	x;
 	printf("Input number: ");
