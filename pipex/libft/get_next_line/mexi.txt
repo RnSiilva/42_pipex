@@ -1,0 +1,4 @@
+libft:
+ft_strlen
+ft_strchr
+
