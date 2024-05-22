@@ -20,7 +20,7 @@
 	<span> · </span>
 	<a href="#-useful-links">Useful Links</a>
 	<span> · </span>
-	<a href="-concepts">Concepts</a>
+	<a href="#-concepts">Concepts</a>
 </h3>
 
 ---
