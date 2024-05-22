@@ -6,7 +6,7 @@
 #    By: resilva <resilva@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/15 18:59:11 by resilva           #+#    #+#              #
-#    Updated: 2024/05/16 00:42:48 by resilva          ###   ########.fr        #
+#    Updated: 2024/05/16 18:51:25 by resilva          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,23 +35,28 @@ LIBFT_P	=	libft
 LIBFT 	=	-L $(LIBFT_P) -lft
 
 .c.o:
-			@$(CC) $(CFLAGS) $(INCLUDE) -c $< -o $(<:.c=.o)
+			$(CC) $(CFLAGS) $(INCLUDE) -c $< -o $(<:.c=.o)
 
 all:		$(NAME)
 
 $(NAME):	$(OBJS)
-
+			@echo "$(MAGENTA)Compiling:$(RESET) $(GREEN)libft/*$(RESET)"
 			$(MAKE) $(LIBFT_P)
 			
+			@echo "$(CYAN)🔗 Linking...$(RESET)"
 			$(CC) $(OBJS) $(LIBFT) -o $(NAME)
 
+			@echo "$(GREEN)🎉 Compilation is done! 🎉$(RESET)"
+
 clean:
-			$(RM) $(OBJS)
+			@$(RM) $(OBJS)
 			$(MAKE) $(LIBFT_P) clean
+			@echo "$(RED)🗑️  Deleted: $(RESET) $(GREEN)$(OBJS)$(RESET)"
 
 fclean:		clean
 			$(MAKE) $(LIBFT_P) fclean
-			$(RM) $(NAME)
+			@$(RM) $(NAME)
+			@echo "$(RED)🗑️  Deleted: $(RESET) $(GREEN)$(NAME)$(RESET)"
 
 re:			fclean all
 
