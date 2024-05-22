@@ -3,10 +3,10 @@
 </h1>
 
 <p align="center">
-	<img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/RnSiilva/42_so_long?color=blueviolet" />
-	<img alt="Code language count" src="https://img.shields.io/github/languages/count/RnSiilva/42_so_long?color=blue" />
-	<img alt="GitHub top language" src="https://img.shields.io/github/languages/top/RnSiilva/42_so_long?color=blue" />
-	<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/RnSiilva/42_so_long?color=brightgreen" />
+	<img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/RnSiilva/42_pipex?color=blueviolet" />
+	<img alt="Code language count" src="https://img.shields.io/github/languages/count/RnSiilva/42_pipex?color=blue" />
+	<img alt="GitHub top language" src="https://img.shields.io/github/languages/top/RnSiilva/42_pipex?color=blue" />
+	<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/RnSiilva/42_pipex?color=brightgreen" />
 </p>
 
 <h3 align="center">
@@ -20,9 +20,7 @@
 	<span> · </span>
 	<a href="#-useful-links">Useful Links</a>
 	<span> · </span>
-	<a href="-game">Game Rules</a>
-  <span> · </span>
-	<a href="-controls">Controls</a>
+	<a href="-concepts">Concepts</a>
 </h3>
 
 ---
